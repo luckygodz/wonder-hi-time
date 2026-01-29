@@ -1,26 +1,26 @@
-import { Sparkles, Users, Zap, Shield } from "lucide-react";
+import { Globe, Users, Shield, Headphones } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const features = [
   {
-    icon: Sparkles,
-    title: "Cosmic Gameplay",
-    description: "Experience unique space-themed gameplay mechanics and custom content",
+    icon: Globe,
+    title: "Multi-Region Servers",
+    description: "Play with low latency from Asia, North America, or Central Europe",
   },
   {
     icon: Users,
     title: "Active Community",
-    description: "Join a thriving community of builders and explorers",
-  },
-  {
-    icon: Zap,
-    title: "Custom Features",
-    description: "Enjoy custom plugins and features designed for the best experience",
+    description: "Join thousands of players exploring, building, and competing together",
   },
   {
     icon: Shield,
-    title: "Protected Builds",
-    description: "Your creations are safe with our advanced protection systems",
+    title: "Anti-Cheat Protection",
+    description: "Fair gameplay on Economy & Vanilla with advanced anti-cheat systems",
+  },
+  {
+    icon: Headphones,
+    title: "24/7 Support",
+    description: "Dedicated staff team ready to help via Discord anytime",
   },
 ];
 
@@ -32,7 +32,7 @@ const Features = () => {
           Why Join Us?
         </h2>
         <p className="font-space text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
-          Discover what makes Celestial City the ultimate space-themed Minecraft experience
+          Experience Minecraft like never before with our global network
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
