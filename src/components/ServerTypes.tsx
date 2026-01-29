@@ -39,13 +39,10 @@ const serverTypes = [
     isMain: false,
     features: [
       { icon: Gamepad2, text: "Minimal mods" },
-      { icon: Unlock, text: "Play freely without restrictions" },
       { icon: Mountain, text: "Pure vanilla Minecraft" },
       { icon: Globe, text: "Full survival experience" },
       { icon: Users, text: "Community-driven gameplay" },
       { icon: Home, text: "Build without limits" },
-      { icon: Trophy, text: "Achievements enabled" },
-      { icon: Sparkles, text: "Natural world generation" },
     ],
   },
   {
@@ -62,7 +59,6 @@ const serverTypes = [
       { icon: Globe, text: "No protected areas" },
       { icon: Skull, text: "Griefing permitted" },
       { icon: Unlock, text: "Total freedom" },
-      { icon: Zap, text: "Survival of the fittest" },
     ],
   },
 ];
