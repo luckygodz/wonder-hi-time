@@ -14,7 +14,7 @@ const steps = [
   {
     number: "03",
     title: "Add Server",
-    description: "Click 'Add Server' and enter: celestialcity.net",
+    description: "Click 'Add Server' and enter: celestialcity.top",
   },
   {
     number: "04",
