@@ -25,7 +25,7 @@ const steps = [
 
 const HowToJoin = () => {
   return (
-    <section className="relative py-20 px-4">
+    <section id="how-to-join" className="relative py-20 px-4 scroll-mt-4">
       <div className="container mx-auto">
         <h2 className="font-orbitron text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-cosmic bg-clip-text text-transparent">
           How to Join
