@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const Footer = () => {
   return (
     <footer className="relative py-12 px-4 border-t border-primary/20">
@@ -8,6 +10,22 @@ const Footer = () => {
         <p className="font-space text-muted-foreground mb-6">
           Your gateway to cosmic adventures
         </p>
+        
+        <div className="flex justify-center mb-8">
+          <Button
+            asChild
+            size="lg"
+            className="font-orbitron bg-[#5865F2] hover:bg-[#4752C4] text-white transition-all duration-300"
+          >
+            <a 
+              href="https://discord.gg/Qr7M7vQmzY" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Join our Discord
+            </a>
+          </Button>
+        </div>
         
         <div className="flex flex-col items-center gap-4">
           <p className="font-space text-sm text-muted-foreground">

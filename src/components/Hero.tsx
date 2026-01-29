@@ -6,7 +6,7 @@ import StarField from "./StarField";
 
 const Hero = () => {
   const [copied, setCopied] = useState(false);
-  const serverIP = "celestialcity.net";
+  const serverIP = "celestialcity.top";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(serverIP);
@@ -32,11 +32,17 @@ const Hero = () => {
         </h1>
         
         <p className="font-space text-xl md:text-2xl mb-4 text-foreground/90 max-w-3xl mx-auto">
-          Explore the cosmos. Build among the stars.
+          Multi-Region Economy Server
         </p>
         
+        <div className="flex flex-wrap justify-center gap-3 mb-8">
+          <span className="font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary">🌏 Asia</span>
+          <span className="font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary">🌎 North America</span>
+          <span className="font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary">🌍 Central Europe</span>
+        </div>
+        
         <p className="font-space text-lg md:text-xl mb-12 text-muted-foreground max-w-2xl mx-auto">
-          A space-themed Minecraft server where your imagination knows no bounds
+          Three unique game modes. Endless possibilities.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
