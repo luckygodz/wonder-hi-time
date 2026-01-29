@@ -35,7 +35,7 @@ const serverTypes = [
     id: "vanilla",
     icon: Leaf,
     title: "Vanilla",
-    description: "Pure, unmodified Minecraft experience. No frills, no gimmicks — just classic gameplay.",
+    description: "No mods; pure, unmodified Minecraft experience.",
     isMain: false,
     features: [
       { icon: Gamepad2, text: "Minimal mods" },
@@ -52,7 +52,7 @@ const serverTypes = [
     id: "anarchy",
     icon: Flame,
     title: "Anarchy",
-    description: "No rules. No limits. Chaos reigns supreme. Do whatever you want — if you can survive.",
+    description: "No rules. No limits. Do whatever you want.",
     isMain: false,
     features: [
       { icon: ShieldOff, text: "No rules whatsoever" },

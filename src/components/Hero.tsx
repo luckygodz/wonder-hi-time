@@ -49,6 +49,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="font-orbitron text-lg px-8 py-6 bg-gradient-cosmic hover:shadow-glow-purple transition-all duration-300 transform hover:scale-105"
+            onClick={() => document.getElementById('how-to-join')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Join the Adventure
           </Button>
