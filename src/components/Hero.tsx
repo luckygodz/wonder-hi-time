@@ -3,6 +3,7 @@ import { Rocket, Copy, Check } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import StarField from "./StarField";
+import ServerStatus from "./ServerStatus";
 
 const Hero = () => {
   const [copied, setCopied] = useState(false);
@@ -35,10 +36,14 @@ const Hero = () => {
           Multi-Region Economy Server
         </p>
         
-        <div className="flex flex-wrap justify-center gap-3 mb-8">
+        <div className="flex flex-wrap justify-center gap-3 mb-6">
           <span className="font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary">🇸🇬 Asia</span>
           <span className="font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary">🇺🇸 America</span>
           <span className="font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary">🇩🇪 Europe</span>
+        </div>
+        
+        <div className="mb-8">
+          <ServerStatus />
         </div>
         
         <p className="font-space text-lg md:text-xl mb-12 text-muted-foreground max-w-2xl mx-auto">
