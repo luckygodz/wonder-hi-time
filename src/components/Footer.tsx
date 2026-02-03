@@ -4,6 +4,7 @@ const Footer = () => {
   const resourceLinks = [
     { name: 'Store', href: '#', comingSoon: true },
     { name: 'Wiki', href: '#', comingSoon: true },
+    { name: 'Staff Team', href: '#', comingSoon: true },
   ];
 
   const supportLinks = [
@@ -12,18 +13,10 @@ const Footer = () => {
     { name: 'FAQ', href: '#', comingSoon: true },
   ];
 
-  const staffTeam = [
-    { name: 'luckygodz', role: 'Founder' },
-    { name: 'abctools123', role: 'Builder' },
-    { name: 'PolarJat', role: 'Verified Tester' },
-    { name: 'robo_plays', role: 'Verified Tester' },
-    { name: 'ItzJamat', role: 'Verified Tester' },
-  ];
-
   return (
     <footer className="border-t border-primary/20 py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-5 gap-12 mb-12">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-6">
@@ -67,21 +60,6 @@ const Footer = () => {
                   {link.comingSoon && (
                     <span className="text-xs px-2 py-0.5 bg-primary/20 text-primary rounded-full">Soon</span>
                   )}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Staff Team */}
-          <div>
-            <h4 className="font-orbitron font-bold mb-6 uppercase text-xs tracking-widest text-muted-foreground">
-              Staff Team
-            </h4>
-            <ul className="space-y-3 font-space text-sm">
-              {staffTeam.map((member) => (
-                <li key={member.name} className="flex flex-col">
-                  <span className="text-foreground font-medium">{member.name}</span>
-                  <span className="text-muted-foreground text-xs">{member.role}</span>
                 </li>
               ))}
             </ul>
