@@ -2,22 +2,28 @@ import { Sparkles, MessageSquare, Mail } from 'lucide-react';
 
 const Footer = () => {
   const resourceLinks = [
-    { name: 'Store', href: '#' },
-    { name: 'Wiki', href: '#' },
-    { name: 'Staff Team', href: '#' },
-    { name: 'Bans', href: '#' },
+    { name: 'Store', href: '#', comingSoon: true },
+    { name: 'Wiki', href: '#', comingSoon: true },
   ];
 
   const supportLinks = [
     { name: 'Discord', href: 'https://discord.gg/Qr7M7vQmzY', external: true },
     { name: 'Email', href: 'mailto:support@celestialcity.top' },
-    { name: 'FAQ', href: '#' },
+    { name: 'FAQ', href: '#', comingSoon: true },
+  ];
+
+  const staffTeam = [
+    { name: 'luckygodz', role: 'Founder' },
+    { name: 'abctools123', role: 'Builder' },
+    { name: 'PolarJat', role: 'Verified Tester' },
+    { name: 'robo_plays', role: 'Verified Tester' },
+    { name: 'ItzJamat', role: 'Verified Tester' },
   ];
 
   return (
     <footer className="border-t border-primary/20 py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-5 gap-12 mb-12">
           {/* Brand */}
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-6">
@@ -54,10 +60,28 @@ const Footer = () => {
             </h4>
             <ul className="space-y-4 font-space text-muted-foreground text-sm">
               {resourceLinks.map((link) => (
-                <li key={link.name}>
-                  <a href={link.href} className="hover:text-primary transition-colors">
+                <li key={link.name} className="flex items-center gap-2">
+                  <span className={link.comingSoon ? 'text-muted-foreground/50' : ''}>
                     {link.name}
-                  </a>
+                  </span>
+                  {link.comingSoon && (
+                    <span className="text-xs px-2 py-0.5 bg-primary/20 text-primary rounded-full">Soon</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Staff Team */}
+          <div>
+            <h4 className="font-orbitron font-bold mb-6 uppercase text-xs tracking-widest text-muted-foreground">
+              Staff Team
+            </h4>
+            <ul className="space-y-3 font-space text-sm">
+              {staffTeam.map((member) => (
+                <li key={member.name} className="flex flex-col">
+                  <span className="text-foreground font-medium">{member.name}</span>
+                  <span className="text-muted-foreground text-xs">{member.role}</span>
                 </li>
               ))}
             </ul>
@@ -70,15 +94,22 @@ const Footer = () => {
             </h4>
             <ul className="space-y-4 font-space text-muted-foreground text-sm">
               {supportLinks.map((link) => (
-                <li key={link.name}>
-                  <a 
-                    href={link.href} 
-                    target={link.external ? '_blank' : undefined}
-                    rel={link.external ? 'noopener noreferrer' : undefined}
-                    className="hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </a>
+                <li key={link.name} className="flex items-center gap-2">
+                  {link.comingSoon ? (
+                    <>
+                      <span className="text-muted-foreground/50">{link.name}</span>
+                      <span className="text-xs px-2 py-0.5 bg-primary/20 text-primary rounded-full">Soon</span>
+                    </>
+                  ) : (
+                    <a 
+                      href={link.href} 
+                      target={link.external ? '_blank' : undefined}
+                      rel={link.external ? 'noopener noreferrer' : undefined}
+                      className="hover:text-primary transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
