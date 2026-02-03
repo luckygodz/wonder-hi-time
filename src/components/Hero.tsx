@@ -37,16 +37,16 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-wrap justify-center gap-4 mb-6">
-          <div className="group flex items-center gap-2 font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary hover:border-primary/50 transition-all duration-300">
-            <span className="text-xl grayscale group-hover:grayscale-0 transition-all duration-300">🇪🇺</span>
+          <div className="flex items-center gap-2 font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary hover:border-primary/50 transition-all duration-300">
+            <span className="text-xl">🇪🇺</span>
             <span>Europe</span>
           </div>
-          <div className="group flex items-center gap-2 font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary hover:border-primary/50 transition-all duration-300">
-            <span className="text-xl grayscale group-hover:grayscale-0 transition-all duration-300">🇺🇸</span>
+          <div className="flex items-center gap-2 font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary hover:border-primary/50 transition-all duration-300">
+            <span className="text-xl">🇺🇸</span>
             <span>America</span>
           </div>
-          <div className="group flex items-center gap-2 font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary hover:border-primary/50 transition-all duration-300">
-            <span className="text-xl grayscale group-hover:grayscale-0 transition-all duration-300">🇸🇬</span>
+          <div className="flex items-center gap-2 font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary hover:border-primary/50 transition-all duration-300">
+            <span className="text-xl">🇸🇬</span>
             <span>Asia</span>
           </div>
         </div>
