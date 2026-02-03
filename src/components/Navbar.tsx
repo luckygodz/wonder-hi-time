@@ -65,12 +65,8 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div 
-        className={`md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-md border-b border-primary/20 overflow-hidden transition-all duration-300 ease-in-out ${
-          mobileMenuOpen ? 'max-h-96 opacity-100 p-6' : 'max-h-0 opacity-0 p-0'
-        }`}
-      >
-        <div className={`flex flex-col gap-6 transition-all duration-300 ${mobileMenuOpen ? 'translate-y-0' : '-translate-y-4'}`}>
+      {mobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-md border-b border-primary/20 p-6 flex flex-col gap-6">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -93,7 +89,7 @@ const Navbar = () => {
             Play Now
           </Button>
         </div>
-      </div>
+      )}
     </nav>
   );
 };
