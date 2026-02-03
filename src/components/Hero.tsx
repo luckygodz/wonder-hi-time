@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Rocket, Copy, Check } from "lucide-react";
+import { Rocket, Copy, Check, Shield } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import StarField from "./StarField";
@@ -36,10 +36,24 @@ const Hero = () => {
           Multi-Region Economy Server
         </p>
         
-        <div className="flex flex-wrap justify-center gap-3 mb-6">
-          <span className="font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary">🇸🇬 Asia</span>
-          <span className="font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary">🇺🇸 America</span>
-          <span className="font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary">🇩🇪 Europe</span>
+        <div className="flex flex-wrap justify-center gap-4 mb-6">
+          <div className="group flex items-center gap-2 font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary hover:border-primary/50 transition-all duration-300">
+            <span className="text-xl grayscale group-hover:grayscale-0 transition-all duration-300">🇪🇺</span>
+            <span>Europe</span>
+          </div>
+          <div className="group flex items-center gap-2 font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary hover:border-primary/50 transition-all duration-300">
+            <span className="text-xl grayscale group-hover:grayscale-0 transition-all duration-300">🇺🇸</span>
+            <span>America</span>
+          </div>
+          <div className="group flex items-center gap-2 font-space text-sm px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary hover:border-primary/50 transition-all duration-300">
+            <span className="text-xl grayscale group-hover:grayscale-0 transition-all duration-300">🇸🇬</span>
+            <span>Asia</span>
+          </div>
+        </div>
+        
+        <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground mb-6">
+          <Shield className="w-4 h-4 text-primary" />
+          <span className="font-space">DDoS Protected Hardware</span>
         </div>
         
         <div className="mb-8">
